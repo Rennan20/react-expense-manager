@@ -13,3 +13,4 @@ Projeto desenvolvido durante o curso
 ### Para rodar
 
 - `npm start`
+"# react-expense-manager" 
