@@ -5,23 +5,33 @@
 /.pnp
 .pnp.js
 
+
 # testing
 /coverage
 
+# next.js
+/.next/
+/out/
+
 # production
 /build
-/.next  
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.pem
 
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Other
-**/*.tsbuildinfo  # Ignore TypeScript build info files (if using TypeScript)
+# local env files
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
