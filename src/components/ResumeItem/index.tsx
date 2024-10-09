@@ -1,12 +1,7 @@
-import * as C from "./styles";
+import * as C from './styles';
+import { ResumeItemProps } from './types';
 
-type Props = {
-  title: string;
-  value: number;
-  color?: string;
-};
-
-export const ResumeItem = ({ title, value, color }: Props) => {
+export const ResumeItem = ({ title, value, color }: ResumeItemProps) => {
   return (
     <C.Container>
       <C.Title>{title}</C.Title>

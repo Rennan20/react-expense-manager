@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: #fff;
-  box-sadhow: 0px 0px 5px #ccc;
+  box-shadow: 0px 0px 5px #ccc;
   padding: 20px;
   border-radius: 5px;
   margin-top: -40px;

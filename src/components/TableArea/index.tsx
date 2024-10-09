@@ -1,13 +1,8 @@
-import * as C from "./styles";
-import { Item } from "../../types/Item";
-import { items } from "../../data/items";
-import { TableItem } from "../TableItem";
+import { TableItem } from '../TableItem';
+import * as C from './styles';
+import { TableAreaProps } from './types';
 
-type Props = {
-  list: Item[];
-};
-
-export const TableArea = ({ list }: Props) => {
+export const TableArea = ({ list }: TableAreaProps) => {
   return (
     <C.Table>
       <thead>

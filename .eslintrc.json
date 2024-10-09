@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next",
+    "prettier",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["react-hooks", "import-helpers", "react"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react/", "/^next/", "/@next/"],
+          "module",
+          "/^@shared/",
+          "/^@providers/",
+          "absolute",
+          "/^@types/",
+          "/^@components/",
+          "/^@app/",
+          "/^@templates/",
+          "/^@hooks/",
+          "/^@lib/",
+          "/^@repositories/",
+          "/^@store/",
+          "/^@utils/",
+          "/^@services/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
+  }
+}
