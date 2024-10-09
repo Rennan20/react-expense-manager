@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Table = styled.table`
   width: 100%;
@@ -10,7 +10,7 @@ export const Table = styled.table`
 `;
 
 export const TableHeadColum = styled.th<{ width?: number }>`
-width: ${(props) => (props.width ? `${props.width}px` : "auto")}
+  width: ${(props) => (props.width ? `${props.width}px` : 'auto')};
   padding: 10px 0;
   text-align: left;
 `;
